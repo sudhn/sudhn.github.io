@@ -1,0 +1,132 @@
+body {
+	margin: 0;
+	background-color: #ddd;
+}
+.main {
+	width: 800px;
+	height: 500px;
+	margin: 50px auto 0;
+	overflow: hidden;
+
+	background-color: #fff;
+	box-shadow: 0 0 5px #000; 
+}
+.main-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.has-text {
+	width: 200px;
+	min-height: 10px;
+}
+
+.object-selected {
+	border: 1px solid red;
+}
+
+.ui-draggable,
+.ui-draggable div[contenteditable],
+.ui-draggable:hover {
+	cursor: move;
+}
+.ui-draggable:active {
+	cursor: move;
+}
+.ui-draggable.ui-draggable-handle {
+	position: absolute !important;
+}
+
+
+
+
+.inline-menu { 
+	position: absolute;
+	top: -28px;
+	right: 0;
+	display: none;
+
+}
+.ui-draggable:hover  .inline-menu { display:block; }
+
+
+.icon {
+	display: inline-block;
+	cursor: pointer;
+	background-size: 100%;
+	font-size: 0; 
+}
+.icon-remove {
+	
+	width: 15px;
+	height: 15px;
+	background-image: url("../img/remove.png") ;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	border: 1px solid #000;
+
+}
+.icon-edit { 
+	width: 15px;
+	height: 15px;
+	background-image: url("../img/edit.png") ;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	border: 1px solid #000;
+}
+
+
+
+
+/* Summer Note */
+.note-editor { 
+	border-width: 0; 
+	height: 100%;
+}
+.note-editor .note-toolbar {
+	width: 254px;
+	height: 42px;
+	top: -42px;
+	left:0;
+	position: absolute;
+	border-width: 0;
+	background-color: #6CC2F0;
+
+	display: none;
+}
+.show-editor .note-editor .note-toolbar  { display: block; }
+.note-editor .note-editable {
+	padding: 5px;
+	border-width: 0;
+	outline-width: 0;
+	background-color: transparent;
+	height: 100%;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+/* Video */
+
+.video-container {
+	width: 320px;
+	min-height: 240px;
+}
+
+
+/* Demonstration Position */
+.svg-position {
+	left: 24.9914855957031px;
+	top: 70.9971580505371px;
+}
+.text-position {
+	left: 48px;
+	top: 246.994312286377px;
+}
+.audio-position {
+	left: 334.988616943359px;
+	top: 51.9886322021484px;
+}
+.video-position {
+	left: 336px;
+	top: 114.991470336914px;
+}
